@@ -4,9 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign up</title>
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="bolb doctor" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo_sidebar"></div>
+    </div>
+    <div class="sign_up_form">
+      <div class="section_1">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+    Sign up now to get started.</p>
+        <br>
+        <p>You know you want to.</p>
+      </div>        
+        <form action="https://httpbin.org/post" method="post" autocomplete="off">
+          <div class="section_2">
+            <p id="form_title">Sign up</p>
+            <div class="inputs">
+              <div>
+                <label for="username">USERNAME</label>
+                <input id="username" name="username" type="text" pattern="[A-Za-z0-9]{4,15}" required>
+                <span></span>
+              </div>
+              <div>
+                <label for="surname">SURNAME</label>
+                <input id="surname" name="surname" type="text">
+              </div>
+              <div>
+                <label for="email">EMAIL</label>
+                <div>
+                  <input id="email" type="email" required>
+                  <span></span>
+                </div>
+              </div>
+              <div>
+                <label for="phone_number">PHONE NUMBER</label>
+                <input id="phone_number" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="0912-345-678" required>
+                <span></span>
+              </div>
+              <div>
+                <label for="password">PASSWORD</label>
+                <input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#$%^&*])).{8,15}" required>
+                <span></span>
+                <p>at least one number, one uppercase and lowercase letter,<br>one special character(!@#$%^&*), 8-15 characters</p>
+              </div>
+              <div>
+                <label for="confirm_password">COMFIRM PASSWORD</label>
+                <input id="confirm_password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#$%^&*])).{8,15}" required>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="section_3">
+            <button type="submit">Create Account</button>
+            <p id="login_option">Already have an account? <a href="">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
