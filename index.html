@@ -35,7 +35,8 @@
               </div>
               <div>
                 <label for="surname">SURNAME</label>
-                <input id="surname" name="surname" type="text">
+                <input id="surname" name="surname" type="text" pattern="[A-Za-z]{1,15}">
+                <span></span>
               </div>
               <div>
                 <label for="email">EMAIL</label>
@@ -53,7 +54,6 @@
                 <label for="password">PASSWORD</label>
                 <input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])((?=.*[!@#$%^&*])).{8,15}" required>
                 <span></span>
-                <p>at least one number, one uppercase and lowercase letter,<br>one special character(!@#$%^&*), 8-15 characters</p>
               </div>
               <div>
                 <label for="confirm_password">COMFIRM PASSWORD</label>

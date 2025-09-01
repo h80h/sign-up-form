@@ -97,8 +97,8 @@ body {
 .section_2 {
   background: #fafafa;
   box-shadow: 0 5px 5px -3px rgba(115,115,115,0.35);
-  padding: 20px 50px 30px 50px;
-  height: 300px;
+  padding: 20px 50px;
+  height: 320px;
 }
 
 #form_title {
@@ -108,7 +108,7 @@ body {
 .inputs {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 35px;
   font-size: 12px;
   font-family: monospace;
 }
@@ -183,8 +183,32 @@ input:required + span::after {
   left: -14px;
 }
 
-span + p {
-  font-size: 10px;
-  font-family: sans-serif;
+input[id="username"],
+input[id="password"],
+input[id="surname"] {
+  position: relative;
+}
+
+input[id="username"] + span::before {
+  content: "4-15 characters,\Aonly number, uppercase, lowercase, _ or -";
+  white-space: pre-wrap;
+  position: absolute;
+}
+
+input[id="password"] + span::before {
+  content: "8-15 characters,\A at least 1 num, 1 upper, 1 lower, 1 special (!@#$%^&*)";
+  white-space: pre-wrap;
+  position: absolute;
+}
+
+input[id="surname"] + span::before {
+  content: "less than 15 characters,\A only upper or lower letter";
+  white-space: pre-wrap;
+  position: absolute;
+}
+
+span::before {
+  font-size: 12px;
+  font-family: serif;
 }
 
