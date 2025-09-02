@@ -186,7 +186,7 @@ input[id="surname"] {
 }
 
 input[id="username"] + span::before {
-  content: "4-15 characters,\Aonly number, uppercase, lowercase, _ or -";
+  content: "4-15 characters,\Aonly num, upper, lower, _ or -";
   white-space: pre-wrap;
   position: absolute;
 }
