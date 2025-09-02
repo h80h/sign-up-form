@@ -51,20 +51,16 @@ body {
 }
 
 .container{
+  flex: 1;
   display: flex;
-  flex: auto;
-  box-sizing: border-box;
-  margin: 0 150px 0;
+  justify-content: center;
   background: #fafafa;
-}
-
-.container div {
-  flex: auto;
 }
 
 .sidebar {
   background: center / 76% 
   url("image/bolb_doctor.png");
+  width: 300px;
 }
 
 .logo_sidebar {
@@ -82,8 +78,8 @@ body {
 }
 
 .sign_up_form {
-  width: 400px;
   flex-shrink: 0;
+  width: 600px;
   background: #eeeeee;
   font-size: 20px;
   color: #333333;
