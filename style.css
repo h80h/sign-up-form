@@ -117,7 +117,6 @@ body {
 }
 
 input {
-  width: 200px;
   height: 25px;
   outline: none;
 }
@@ -183,6 +182,7 @@ input[id="username"],
 input[id="password"],
 input[id="surname"] {
   position: relative;
+  
 }
 
 input[id="username"] + span::before {
